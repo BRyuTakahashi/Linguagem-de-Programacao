@@ -35,7 +35,7 @@ public class Sorteio {
             }
         }
         
-        System.out.println("Foram sorteados " + contadorPar + " numeros pares e " + contadorImpar + " numeros impares");
+        System.out.println("Foram sorteados " + contadorPar + " números pares e " + contadorImpar + " números ímpares");
         
     }
 }
