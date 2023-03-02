@@ -6,14 +6,14 @@ public class ClasseSocial {
         return renda / 1045;
     }
     
-    String devolverClasseSocial(Double devolverSalariosMinimos){
-        if(devolverSalariosMinimos <= 2.0){
+    String devolverClasseSocial(Double receberSalariosMinimos){
+        if(receberSalariosMinimos <= 2.0){
             return "E";
-        } else if(devolverSalariosMinimos > 2.0 && devolverSalariosMinimos <= 4.0){
+        } else if(receberSalariosMinimos > 2.0 && receberSalariosMinimos <= 4.0){
             return "D";
-        } else if (devolverSalariosMinimos >4.0 && devolverSalariosMinimos <= 10.0){
+        } else if (receberSalariosMinimos >4.0 && receberSalariosMinimos <= 10.0){
             return "C";
-        } else if(devolverSalariosMinimos > 10.0 && devolverSalariosMinimos <= 20.0){
+        } else if(receberSalariosMinimos > 10.0 && receberSalariosMinimos <= 20.0){
             return "B";
         } else{
             return "A";
