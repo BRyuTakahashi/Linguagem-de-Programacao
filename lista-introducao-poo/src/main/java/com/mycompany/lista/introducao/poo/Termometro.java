@@ -1,0 +1,29 @@
+package com.mycompany.lista.introducao.poo;
+
+public class Termometro {
+    Double temperaturaAtual;
+    Double temperaturaMin;
+    Double temperaturaMax;
+    
+    void aumentaTemperatura(Double quantidadeAumentar){
+        temperaturaAtual += quantidadeAumentar;
+        if(temperaturaAtual > temperaturaMax){
+            temperaturaAtual = temperaturaMax;
+        }
+        
+        System.out.println(String.format("Sua temperatura atual é de %.2f Celsius", temperaturaAtual));
+    }
+    void diminuiTemperatura(Double quantidadeDiminuir){
+        temperaturaAtual -= quantidadeDiminuir;
+        if(temperaturaAtual < temperaturaMin){
+            temperaturaAtual = temperaturaMin;
+        }
+        
+        System.out.println(String.format("Sua temperatura atual é de %.2f Celsius", temperaturaAtual));
+    }
+    void exibeFahrenheit(){
+        Double temperaturaFahrenheit;
+        temperaturaFahrenheit = temperaturaAtual * 1.8 + 32;
+        System.out.println(String.format("Sua temperatura em Celsius é equivalente a %.2f Fahrenheit", temperaturaFahrenheit));
+    }
+}
