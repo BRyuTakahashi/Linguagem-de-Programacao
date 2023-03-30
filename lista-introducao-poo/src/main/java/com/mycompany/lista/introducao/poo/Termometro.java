@@ -6,17 +6,19 @@ public class Termometro {
     Double temperaturaMax;
     
     void aumentaTemperatura(Double quantidadeAumentar){
-        temperaturaAtual += quantidadeAumentar;
-        if(temperaturaAtual > temperaturaMax){
+        if((temperaturaAtual + quantidadeAumentar) > temperaturaMax){
             temperaturaAtual = temperaturaMax;
+        } else {
+            temperaturaAtual += quantidadeAumentar;
         }
         
         System.out.println(String.format("Sua temperatura atual é de %.2f Celsius", temperaturaAtual));
     }
     void diminuiTemperatura(Double quantidadeDiminuir){
-        temperaturaAtual -= quantidadeDiminuir;
-        if(temperaturaAtual < temperaturaMin){
+        if((temperaturaAtual - quantidadeDiminuir) < temperaturaMin){
             temperaturaAtual = temperaturaMin;
+        } else {
+            temperaturaAtual -= quantidadeDiminuir;
         }
         
         System.out.println(String.format("Sua temperatura atual é de %.2f Celsius", temperaturaAtual));
