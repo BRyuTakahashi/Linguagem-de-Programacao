@@ -9,7 +9,9 @@ public class Bolo {
         
         if((quantidadeVendida + quantidadeComprada) > 100){
             System.out.println("Seu pedido ultrapassou nosso limite diário para esse bolo");
-        } else {
+        } else if (quantidadeComprada <= 0){
+            System.out.println("Insira uma quantiade válida para compra");
+        }else {
             quantidadeVendida += quantidadeComprada;
             System.out.println(String.format("Você adicionou mais %d bolos de %s, totalizando %d bolos", quantidadeComprada, sabor,quantidadeVendida));
         }
