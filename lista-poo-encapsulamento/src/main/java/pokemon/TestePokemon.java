@@ -6,6 +6,7 @@ public class TestePokemon {
         Pokémon pokemon1 = new Pokémon();
         Pokémon pokemon2 = new Pokémon();
         Pokémon pokemon3 = new Pokémon();
+        Pokémon pokemon4 = new Pokémon();
         
         pokemon1.setNomePokemon("Piplup");
         pokemon1.setTipo("Água");
@@ -19,7 +20,31 @@ public class TestePokemon {
         pokemon3.setTipo("Fogo");
         pokemon3.setForca(300.0);
         
+        pokemon4.setNomePokemon("Pikachu");
+        pokemon4.setTipo("Elétrico");
+        pokemon4.setForca(500.0);
+        
         treinador.nomeTreinador = "Red";
+        
+//        treinador.treinarPokemon(pokemon4, pokemon4, pokemon4);
+//        treinador.treinarPokemon(pokemon4, pokemon4, pokemon4);
+//        treinador.treinarPokemon(pokemon4, pokemon4, pokemon4);
+//        treinador.treinarPokemon(pokemon4, pokemon4, pokemon4);
+//        treinador.treinarPokemon(pokemon4, pokemon4, pokemon4);
+//        treinador.treinarPokemon(pokemon4, pokemon4, pokemon4);
+//        
+//        System.out.println(pokemon4.getDoce());
+//        
+//        treinador.evoluirPokemon(pokemon4, "Raichu", pokemon4);
+//        System.out.println(pokemon4.getForca());
+//        System.out.println(pokemon4.getDoce());
+//        
+//        treinador.treinarPokemon(pokemon4, pokemon4, pokemon4);
+//        treinador.treinarPokemon(pokemon4, pokemon4, pokemon4);
+//        treinador.treinarPokemon(pokemon4, pokemon4, pokemon4);
+//        treinador.treinarPokemon(pokemon4, pokemon4, pokemon4);
+//        treinador.evoluirPokemon(pokemon4, "Mega Raichu", pokemon4);
+        
         
 //        treinador.treinarPokemon(pokemon3, pokemon3, pokemon3);
 //        treinador.treinarPokemon(pokemon3, pokemon3, pokemon3);
